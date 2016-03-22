@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5461B4B2-0832-42D5-AE04-6B2A7D4BF4DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gramma.LanguageModel</RootNamespace>
+    <AssemblyName>Gramma.LanguageModel</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Gramma.LanguageModel.XML</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Gramma.LanguageModel.XML</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Grammar\SerializationSurrogates\GrammarModelSerializationSurrogate.cs" />
+    <Compile Include="Grammar\Inflection.cs" />
+    <Compile Include="Grammar\SerializationSurrogates\InflectionSerializationSurrogate.cs" />
+    <Compile Include="Grammar\InflectionType.cs" />
+    <Compile Include="Grammar\GrammarModel.cs" />
+    <Compile Include="Grammar\SerializationSurrogates\InflectionTypeSerializationSurrogate.cs" />
+    <Compile Include="Grammar\SerializationSurrogates\TagSerializationSurrogate.cs" />
+    <Compile Include="Grammar\SerializationSurrogates\TagTypeSerializationSurrogate.cs" />
+    <Compile Include="NamedKeyedChild.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Grammar\Tag.cs" />
+    <Compile Include="Grammar\TagType.cs" />
+    <Compile Include="Provision\EditCommands\SyllabicWordBuilder.cs" />
+    <Compile Include="Provision\LanguageFacet.cs" />
+    <Compile Include="TrainingSources\CompositeTrainingSource.cs" />
+    <Compile Include="Provision\EditCommands\AddCommand.cs" />
+    <Compile Include="Provision\EditCommands\CommandSequenceClass.cs" />
+    <Compile Include="Provision\EditCommands\CommandSequence.cs" />
+    <Compile Include="Provision\EditCommands\DeleteCommand.cs" />
+    <Compile Include="Provision\EditCommands\EditCommand.cs" />
+    <Compile Include="Provision\EditCommands\IndexedOperation.cs" />
+    <Compile Include="Provision\EditCommands\ReplaceAllCommand.cs" />
+    <Compile Include="Provision\EditCommands\ReplaceCommand.cs" />
+    <Compile Include="Provision\ReadOnlyLanguageFacet.cs" />
+    <Compile Include="Provision\LanguageProvider.cs" />
+    <Compile Include="Provision\EditCommands\NoChangeCommand.cs" />
+    <Compile Include="Provision\LanguageProviders.cs" />
+    <Compile Include="Provision\ProvisionException.cs" />
+    <Compile Include="Provision\SentenceBreaker.cs" />
+    <Compile Include="TrainingSources\KFoldMode.cs" />
+    <Compile Include="TrainingSources\KFoldTrainingSource.cs" />
+    <Compile Include="TrainingSources\SentenceTrainingSource.cs" />
+    <Compile Include="TrainingSources\SentenceTrainingSources.cs" />
+    <Compile Include="Provision\Syllabizer.cs" />
+    <Compile Include="TrainingSources\SourceSet.cs" />
+    <Compile Include="TrainingSources\TaggedSentence.cs" />
+    <Compile Include="TrainingSources\TaggedWordTrainingSources.cs" />
+    <Compile Include="TrainingSources\TrainingSet.cs" />
+    <Compile Include="TrainingSources\TrainingSets.cs" />
+    <Compile Include="TrainingSources\TrainingSource.cs" />
+    <Compile Include="TrainingSources\TaggedWordForm.cs" />
+    <Compile Include="TrainingSources\TaggedWordTrainingSource.cs" />
+    <Compile Include="TrainingSources\UntaggedWordTrainingSource.cs" />
+    <Compile Include="TrainingSources\UntaggedWordTrainingSources.cs" />
+    <Compile Include="SyllabicWord.cs" />
+    <Compile Include="TrainingSources\ValidationSet.cs" />
+    <Compile Include="TrainingSources\ValidationSets.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gramma.GenericContentModel\Gramma.GenericContentModel.csproj">
+      <Project>{79D2D4C7-C8DE-4F11-93ED-AA4E4D2FC974}</Project>
+      <Name>Gramma.GenericContentModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gramma.Linq\Gramma.Linq.csproj">
+      <Project>{E5B5F560-5224-49CC-B807-D13CE452D63B}</Project>
+      <Name>Gramma.Linq</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
