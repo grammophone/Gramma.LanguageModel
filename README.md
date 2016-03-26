@@ -9,7 +9,7 @@ It defines the abstract class `LanguageProvider`, a contract for providing resou
 
 ![Sentence, syllabic representation and handling](http://s27.postimg.org/kn7uwxdur/Sentence_and_syllabic_handling.png)
 
-This library also defines the contract for training sources for a language. As shown in the following diagram, all kinds of sources derive from `TrainingSource<T>`, where `T` is the type of item in the stream of straining data. In this way, the `TaggedWordTrainingSource` as a `TrainingSource<TaggedWordForm>` and `SentenceTrainingSource` is a `TrainingSource<TaggedSentence>`. Training sources can be combined via `CompositeTrainingSource<T>` and automatically sliced by `NFoldTrainingSource<T>` to support n-fold validation.
+This library also defines the contract for training sources for a language. As shown in the following diagram, all kinds of sources derive from `TrainingSource<T>`, where `T` is the type of item in the stream of training data. In this way, the `TaggedWordTrainingSource` as a `TrainingSource<TaggedWordForm>` and `SentenceTrainingSource` is a `TrainingSource<TaggedSentence>`. Training sources can be combined via `CompositeTrainingSource<T>` and automatically sliced by `NFoldTrainingSource<T>` to support n-fold validation.
 
 ![Training sources contract](http://s12.postimg.org/95bu0xgwt/Training_sources_contract.png)
 
