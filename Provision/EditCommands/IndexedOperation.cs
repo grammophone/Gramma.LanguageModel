@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Gramma.LanguageModel.Provision.EditCommands
+namespace Grammophone.LanguageModel.Provision.EditCommands
 {
 	/// <summary>
 	/// Perscribes an operation of an <see cref="EditCommand"/> at a syllable index.

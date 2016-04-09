@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Gramma.GenericContentModel;
+using Grammophone.GenericContentModel;
 
-namespace Gramma.LanguageModel
+namespace Grammophone.LanguageModel
 {
 	/// <summary>
 	/// A child of a container indexed by name and 

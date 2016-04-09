@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Runtime.Serialization;
-using Gramma.LanguageModel.Provision;
+using Grammophone.LanguageModel.Provision;
 
-namespace Gramma.LanguageModel.Grammar.SerializationSurrogates
+namespace Grammophone.LanguageModel.Grammar.SerializationSurrogates
 {
 	/// <summary>
 	/// Serialization surrogate for <see cref="GrammarModel"/> of a <see cref="LanguageProvider"/>.

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Gramma.LanguageModel.TrainingSources
+namespace Grammophone.LanguageModel.TrainingSources
 {
 	/// <summary>
 	/// The mode of <see cref="KFoldTrainingSource{T}"/>.

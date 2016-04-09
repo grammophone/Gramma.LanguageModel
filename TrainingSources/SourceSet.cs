@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xaml;
-using Gramma.LanguageModel.Provision;
+using Grammophone.LanguageModel.Provision;
 
-namespace Gramma.LanguageModel.TrainingSources
+namespace Grammophone.LanguageModel.TrainingSources
 {
 	/// <summary>
 	/// A collection of training data sets under a <see cref="LanguageProvider"/>.

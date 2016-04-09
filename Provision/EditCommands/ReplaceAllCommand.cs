@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Runtime.Serialization;
 
-namespace Gramma.LanguageModel.Provision.EditCommands
+namespace Grammophone.LanguageModel.Provision.EditCommands
 {
 	/// <summary>
 	/// Command that performs full, unconditional replacement of 

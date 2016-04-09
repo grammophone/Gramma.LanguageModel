@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Gramma.GenericContentModel;
+using Grammophone.GenericContentModel;
 
-namespace Gramma.LanguageModel.Grammar
+namespace Grammophone.LanguageModel.Grammar
 {
 	/// <summary>
 	/// The inflection of a word.

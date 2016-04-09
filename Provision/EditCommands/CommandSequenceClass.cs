@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Runtime.Serialization;
 
-using Gramma.LanguageModel.Grammar;
+using Grammophone.LanguageModel.Grammar;
 
-namespace Gramma.LanguageModel.Provision.EditCommands
+namespace Grammophone.LanguageModel.Provision.EditCommands
 {
 	/// <summary>
 	/// A correspondence of a command sequence to a grammar tag.

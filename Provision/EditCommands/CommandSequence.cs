@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Gramma.GenericContentModel;
+using Grammophone.GenericContentModel;
 
-namespace Gramma.LanguageModel.Provision.EditCommands
+namespace Grammophone.LanguageModel.Provision.EditCommands
 {
 	/// <summary>
 	/// A sequence of <see cref="IndexedOperation"/>, in ascending index order,

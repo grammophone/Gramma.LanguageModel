@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Gramma.LanguageModel.Provision.EditCommands
+namespace Grammophone.LanguageModel.Provision.EditCommands
 {
 	/// <summary>
 	/// Abstract base for commands which replace a syllable with another syllable.

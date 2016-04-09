@@ -1,5 +1,5 @@
-# Gramma.LanguageModel
-This library abstracts a language in order to be consumed by [Gramma.Inference](https://github.com/grammophone/Gramma.Inference), a part-of-speech tagging and lemmatization framework.
+# Grammophone.LanguageModel
+This library abstracts a language in order to be consumed by [Grammophone.EnnounInference](https://github.com/grammophone/Grammophone.EnnounInference), a part-of-speech tagging and lemmatization framework.
 
 It defines the abstract class `LanguageProvider`, a contract for providing resources for processing text of a language. This is a root object for providing several aspects of the language. First, it should provide its grammar model, as shown in the UML below:
 
@@ -14,5 +14,5 @@ This library also defines the contract for training sources for a language. As s
 ![Training sources contract](http://s12.postimg.org/95bu0xgwt/Training_sources_contract.png)
 
 This project depends on the following projects residing in sibling directories:
-* [Gramma.GenericContentModel](https://github.com/grammophone/Gramma.GenericContentModel)
-* [Gramma.Linq](https://github.com/grammophone/Gramma.Linq)
+* [Grammophone.GenericContentModel](https://github.com/grammophone/Grammophone.GenericContentModel)
+* [Grammophone.Linq](https://github.com/grammophone/Grammophone.Linq)

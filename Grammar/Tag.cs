@@ -4,9 +4,9 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 
-using Gramma.GenericContentModel;
+using Grammophone.GenericContentModel;
 
-namespace Gramma.LanguageModel.Grammar
+namespace Grammophone.LanguageModel.Grammar
 {
 	/// <summary>
 	/// Represents a Part-Of-Speech annotation with an attached collection of <see cref="Inflection"/> annotations.

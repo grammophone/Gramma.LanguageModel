@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Gramma.LanguageModel.Grammar;
+using Grammophone.LanguageModel.Grammar;
 
-namespace Gramma.LanguageModel.TrainingSources
+namespace Grammophone.LanguageModel.TrainingSources
 {
 	/// <summary>
 	/// Represents a possibly inflected form of a word, annotated

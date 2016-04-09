@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
-using Gramma.LanguageModel.Provision;
+using Grammophone.LanguageModel.Provision;
 
-namespace Gramma.LanguageModel.Grammar.SerializationSurrogates
+namespace Grammophone.LanguageModel.Grammar.SerializationSurrogates
 {
 	/// <summary>
 	/// <see cref="Inflection"/> serialization surrogate for replacing deserialized

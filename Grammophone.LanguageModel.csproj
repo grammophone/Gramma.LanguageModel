@@ -8,8 +8,8 @@
     <ProjectGuid>{5461B4B2-0832-42D5-AE04-6B2A7D4BF4DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gramma.LanguageModel</RootNamespace>
-    <AssemblyName>Gramma.LanguageModel</AssemblyName>
+    <RootNamespace>Grammophone.LanguageModel</RootNamespace>
+    <AssemblyName>Grammophone.LanguageModel</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -22,7 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\Gramma.LanguageModel.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\Grammophone.LanguageModel.XML</DocumentationFile>
     <NoWarn>1591</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
@@ -33,7 +33,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\Gramma.LanguageModel.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Grammophone.LanguageModel.XML</DocumentationFile>
     <NoWarn>1591</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
@@ -98,13 +98,13 @@
     <Compile Include="TrainingSources\ValidationSets.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Gramma.GenericContentModel\Gramma.GenericContentModel.csproj">
+    <ProjectReference Include="..\Grammophone.GenericContentModel\Grammophone.GenericContentModel.csproj">
       <Project>{79D2D4C7-C8DE-4F11-93ED-AA4E4D2FC974}</Project>
-      <Name>Gramma.GenericContentModel</Name>
+      <Name>Grammophone.GenericContentModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Gramma.Linq\Gramma.Linq.csproj">
+    <ProjectReference Include="..\Grammophone.Linq\Grammophone.Linq.csproj">
       <Project>{E5B5F560-5224-49CC-B807-D13CE452D63B}</Project>
-      <Name>Gramma.Linq</Name>
+      <Name>Grammophone.Linq</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

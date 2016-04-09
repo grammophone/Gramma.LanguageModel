@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Gramma.GenericContentModel;
+using Grammophone.GenericContentModel;
 
-namespace Gramma.LanguageModel.Grammar
+namespace Grammophone.LanguageModel.Grammar
 {
 	/// <summary>
 	/// A type of inflection annotation. Example: Gender, Number, Case, Mood, Voice etc.

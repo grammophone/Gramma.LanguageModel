@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Gramma.LanguageModel.Provision.EditCommands;
+using Grammophone.LanguageModel.Provision.EditCommands;
 
-namespace Gramma.LanguageModel.Provision
+namespace Grammophone.LanguageModel.Provision
 {
 	/// <summary>
 	/// Contract for breaking, reassembling and compring word syllables.

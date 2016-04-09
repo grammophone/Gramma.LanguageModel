@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Gramma.GenericContentModel;
-using Gramma.LanguageModel.Provision;
+using Grammophone.GenericContentModel;
+using Grammophone.LanguageModel.Provision;
 
-namespace Gramma.LanguageModel.TrainingSources
+namespace Grammophone.LanguageModel.TrainingSources
 {
 	/// <summary>
 	/// Represents a full training set for a language, containing

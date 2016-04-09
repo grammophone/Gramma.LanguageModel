@@ -4,9 +4,9 @@ using System.Collections.Concurrent;
 using System.Linq;
 using System.Text;
 
-using Gramma.GenericContentModel;
+using Grammophone.GenericContentModel;
 
-namespace Gramma.LanguageModel.Grammar
+namespace Grammophone.LanguageModel.Grammar
 {
 	/// <summary>
 	/// Represents a language grammar model.

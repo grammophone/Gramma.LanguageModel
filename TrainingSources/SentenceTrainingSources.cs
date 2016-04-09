@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Gramma.GenericContentModel;
+using Grammophone.GenericContentModel;
 
-namespace Gramma.LanguageModel.TrainingSources
+namespace Grammophone.LanguageModel.TrainingSources
 {
 	/// <summary>
 	/// Read-only collection of <see cref="SentenceTrainingSource"/> elements,

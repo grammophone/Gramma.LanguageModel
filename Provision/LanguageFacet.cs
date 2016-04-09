@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Gramma.LanguageModel.Provision
+namespace Grammophone.LanguageModel.Provision
 {
 	/// <summary>
 	/// An object that is associated to a <see cref="LanguageProvider"/>,

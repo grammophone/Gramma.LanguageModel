@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Gramma.GenericContentModel;
-using Gramma.LanguageModel.Grammar;
+using Grammophone.GenericContentModel;
+using Grammophone.LanguageModel.Grammar;
 
-namespace Gramma.LanguageModel.Provision
+namespace Grammophone.LanguageModel.Provision
 {
 	/// <summary>
 	/// A contract for providing resources for processing text of a language.

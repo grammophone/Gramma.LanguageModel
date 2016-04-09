@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Gramma.LanguageModel.Provision
+namespace Grammophone.LanguageModel.Provision
 {
 	/// <summary>
 	/// Specifies delimiters of sentences and breaks them into words or punctuation.
