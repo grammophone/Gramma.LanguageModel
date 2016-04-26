@@ -11,7 +11,7 @@ namespace Grammophone.LanguageModel.Provision
 	/// <summary>
 	/// A contract for providing resources for processing text of a language.
 	/// </summary>
-	public abstract class LanguageProvider : IKeyedElement<string>
+	public abstract class LanguageProvider : IKeyedElement<string>, IEquatable<LanguageProvider>
 	{
 		#region Private fields
 
@@ -239,6 +239,39 @@ namespace Grammophone.LanguageModel.Provision
 			}
 
 			return inflectionCombinations;
+		}
+
+		/// <summary>
+		/// Checks whether a language provider is equal to this one.
+		/// Equality is determined based on the value of the <see cref="LanguageKey"/> property
+		/// and the type of the language provider alone.
+		/// </summary>
+		/// <param name="other">The language provider to test.</param>
+		public bool Equals(LanguageProvider other)
+		{
+			if (other == null) return false;
+
+			return other.LanguageKey == this.LanguageKey && other.GetType() == this.GetType();
+		}
+
+		/// <summary>
+		/// Checks whether a language provider is equal to this one.
+		/// Equality is determined based on the value of the <see cref="LanguageKey"/> property
+		/// and the type of the language provider alone.
+		/// </summary>
+		public override bool Equals(object obj)
+		{
+			return this.Equals(obj as LanguageProvider);
+		}
+
+		/// <summary>
+		/// Returns hash code depending only on the <see cref="LanguageKey"/> property,
+		/// in order to support equality based on the value of the <see cref="LanguageKey"/> property
+		/// and the type of the language provider alone.
+		/// </summary>
+		public override int GetHashCode()
+		{
+			return this.LanguageKey.GetHashCode();
 		}
 
 		#endregion
