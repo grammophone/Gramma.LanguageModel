@@ -114,7 +114,7 @@ namespace Grammophone.LanguageModel.Provision
 
 			bool previousWasTerminator = false;
 
-			for (char c = (char)textReader.Read(); c != -1; c = (char)textReader.Read())
+			for (char c = (char)textReader.Read(); c != 0xFFFF; c = (char)textReader.Read())
 			{
 				if (this.IsSentenceDelimiter(c))
 				{
