@@ -90,6 +90,72 @@ namespace Grammophone.LanguageModel.Provision
 		}
 
 		/// <summary>
+		/// Separate sentences found in a stream of text
+		/// using the <see cref="IsSentenceDelimiter(char)"/> method to find sentence barriers.
+		/// </summary>
+		/// <param name="textReader">The reader of the text.</param>
+		/// <param name="maxSentenceLength">The maximum length of a sentence.</param>
+		/// <returns>Returns a lazy enumeration of the sentences.</returns>
+		/// <exception cref="ProvisionException">
+		/// Thrown when the <paramref name="textReader"/> provides a sentence having length greater 
+		/// than <paramref name="maxSentenceLength"/>.
+		/// </exception>
+		/// <remarks>
+		/// The enumeration of sentences is lazy to preserve memory when processing large pieces of text.
+		/// The text is not loaded as a whole but it is read sentence-by-sentence.
+		/// </remarks>
+		public virtual IEnumerable<string> SeparateSentences(System.IO.TextReader textReader, int maxSentenceLength = 32767)
+		{
+			if (textReader == null) throw new ArgumentNullException(nameof(textReader));
+
+			var sentenceBuilder = new StringBuilder();
+
+			var sentences = new List<string>();
+
+			bool previousWasTerminator = false;
+
+			for (char c = (char)textReader.Read(); c != -1; c = (char)textReader.Read())
+			{
+				if (this.IsSentenceDelimiter(c))
+				{
+					previousWasTerminator = true;
+				}
+				else
+				{
+					if (previousWasTerminator)
+					{
+						var sentence = sentenceBuilder.ToString().Trim(' ', '\r', '\n');
+
+						if (sentence.Length > 0)
+						{
+							yield return sentence;
+						}
+
+						sentenceBuilder.Clear();
+
+						previousWasTerminator = false;
+					}
+				}
+
+				if (sentenceBuilder.Length >= maxSentenceLength)
+					throw new ProvisionException($"The text contains a sentence having length longer than {maxSentenceLength}.");
+
+				sentenceBuilder.Append(c);
+			}
+
+			if (sentenceBuilder.Length > 0)
+			{
+				var lastSentence = sentenceBuilder.ToString().Trim(' ', '\r', '\n');
+
+				if (lastSentence.Length > 0)
+				{
+					yield return lastSentence;
+				}
+			}
+
+		}
+
+		/// <summary>
 		/// Tests whether a character is a sentence delimiter.
 		/// </summary>
 		/// <param name="c">The character to test.</param>
